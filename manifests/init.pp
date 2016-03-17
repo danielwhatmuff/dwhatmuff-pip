@@ -31,8 +31,13 @@ class pip (
 )
 {
 
+  package { 'python-pip':
+    ensure => present
+  } ->
+
   class { 'pip::package':
-    packages => $packages 
+    packages => $packages,
+    require => Package['python-pip']
   }
 
 }

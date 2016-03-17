@@ -24,7 +24,7 @@ pip::package::packages
     ensure: 'present'
 ```
 
-Requires python and python-pip installed, should be managed elsewhere. Requires stdlib.
+Requires stdlib.
 
 ## Development
 
